@@ -1,0 +1,717 @@
+/*
+Theme Name: SK "Sparta"
+Theme URI: sksparta.ru
+Template: storefront
+Author: AndiMandi
+Author URI: https://vk.com/andimandi03
+Description: Эта тема предназначена для СК "Спарта".
+Tags: custom-background,custom-colors,custom-header
+Version: 4.5.5.1713372209
+Updated: 2024-04-17 19:43:29
+
+*/
+@font-face {
+    font-family: "MainImg";
+    src: url("/wp-content/themes/storefront-child/assets/fonts/AKONY.otf");
+}
+
+@font-face {
+    font-family: "InterBold";
+    src: url("/wp-content/themes/storefront-child/assets/fonts/Inter-Bold.otf");
+}
+
+@font-face {
+    font-family: "InterRegular";
+    src: url("/wp-content/themes/storefront-child/assets/fonts/Inter-Regular.otf");
+}
+
+@font-face {
+    font-family: "Interlight";
+    src: url("/wp-content/themes/storefront-child/assets/fonts/Inter-Light.otf");
+}
+a {
+    color: transparent;
+}
+
+a:focus {
+    outline-color: transparent!important;
+}
+
+a:hover, button:hover {
+    transition: 0.3s;
+}
+
+p {
+    color: white;
+    font-family: "InterLight";
+    font-size: 18px;
+}
+
+#about-us p, #our-services p {
+    line-height: 150%;
+}
+
+html, .site, body {
+    background-color: black;
+}
+
+.m-105 {
+    margin-top: 105px;
+}
+
+.h2-custom {
+    font-family: "InterBold";
+    font-size: 36px;
+    color: white;
+}
+
+h3 {
+    font-family: "InterRegular";
+    font-size: 22px;
+}
+
+/* Header */
+.navbar {
+    padding: 10px 40px;
+}
+
+
+.under-logo p.dark-text {
+    font-family: "Interlight";
+    font-size: 10px;
+}
+
+.contacts-header {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-item {
+    margin-right: 70px;
+}
+
+.nav-link, .nav-link:hover {
+    position: relative;
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+    color: white;
+}
+
+.nav-link:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.nav-link:hover:after,
+.nav-link:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+
+.logos-contacts {
+    margin-right: 30px;
+}
+
+.icon:last-child {
+    margin-left: 10px;
+}
+
+svg .around, svg .center-icon {
+    transition: fill ease-in-out 0.3s, stroke ease-in-out 0.3s;
+}
+
+svg:hover .around {
+    fill: black; /* change fill color of 'telegram-around' path */
+    stroke: white; /* add white border */
+    stroke-width: 1px; /* set border width to 1px */
+    transition: fill ease-in-out 0.3s, stroke ease-in-out 0.3s;
+}
+  
+svg:hover .center-icon {
+    fill: white; /* change fill color of 'telegram' path */
+    transition: fill ease-in-out 0.3s, stroke ease-in-out 0.3s;
+}
+
+.call-header {
+    border-radius: 34px;
+    width: 171px;
+    height: 48px;
+    padding: 12px 30px;
+    font-family: "InterRegular";
+    font-size: 12px;
+    transition: 0.3s;
+    border: 2px solid white;
+}
+
+.call-header:hover {
+    background-color: black;
+    color: white;
+    /* border: 2px solid white; */
+}
+/* End Header */
+
+.container-animated {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.banner {
+    height: 1020px;
+}
+
+.banner h1 {
+    font-family: "MainImg";
+    font-size: 45px;
+    line-height: 125%;
+    letter-spacing: 0.13em;
+    text-align: center;
+    color: white;
+}
+
+.banner-div {
+    text-align: center;
+}
+
+.slon-back, .nf-form-content input[type=submit] {
+    padding: 20px 60px;
+    background-color: #D4BD8C!important;
+    color: white;
+    font-family: "InterBold";
+    font-size: 16px;
+    border: 2px solid white!important;
+    border-radius: 10px!important;
+    transition: 0.3s!important;
+}
+
+.nf-form-content input[type=submit] {
+    padding: 0 60px!important;
+}
+
+.slon-back:hover, .nf-form-content input[type=submit]:hover {
+    background-color: black!important;
+    color: white!important;
+    border: 2px solid white!important;
+    transition: 0.3s!important;
+}
+
+
+.important-block-frame1 {
+    padding: 15px 25px;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+.important-block-frame1 p {
+    margin: 0;
+}
+
+.img-owl {
+    height: fit-content;
+}
+
+.owl-nav {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  top: 50%;
+  z-index: 999;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    left: 0px;
+    top: -25px;
+    width: 59px;
+    height: 59px;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 38px;
+    transition: all 0.2s;
+}
+
+.owl-nav .owl-prev:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 59px;
+    height: 59px;
+    background: url("/wp-content/themes/storefront-child/assets/img/Group 495.svg") 50% 50% no-repeat;
+    transition: all 0.3s;
+}
+
+.owl-nav .owl-prev:hover:before {
+    background: url("/wp-content/themes/storefront-child/assets/img/prev-hover.svg") 50% 50% no-repeat;
+    transition: all 0.3s;
+}
+
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
+    transition: all 0.3s;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    right: 0px;
+    top: -25px;
+    width: 59px;
+    height: 59px;
+    font-weight: bold;
+}
+
+.owl-nav .owl-next:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 59px;
+    height: 59px;
+    background: url("/wp-content/themes/storefront-child/assets/img/Group 494.svg") 50% 50% no-repeat;
+    transition: all 0.3s;
+}
+
+.owl-nav .owl-next:hover:before {
+    background: url("/wp-content/themes/storefront-child/assets/img/next-hover.svg") 50% 50% no-repeat;
+    transition: all 0.3s;
+}
+
+.owl-nav button:hover {
+    background: none!important;
+}
+
+.owl-dots .owl-dot.active span {
+    border: 2px solid white;
+    background: black!important;
+    width: 30px;
+    transition: 0.3s;
+}
+
+.owl-dots .owl-dot span {
+    background: white!important;
+    transition: 0.3s;
+}
+
+.owl-dots .owl-dot:hover span {
+    background: black!important;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+
+.projects > * {
+    margin-bottom: 20px;
+}
+
+.button-classic {
+    padding: 15px;
+    border: 2px solid white;
+    background-color: #FFFFF0;
+    border-radius: 33px;
+    font-family: "Interlight";
+    font-size: 16px;
+    color: black;
+    transition: 0.3s;
+}
+
+.button-classic:not(:last-child) {
+    margin-right: 10px;
+}
+
+.button-classic.active, .button-classic:hover {
+    transition: 0.3s;
+    color: white;
+    background-color: black;
+}
+
+.text-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .text-content.active {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  .carousel-2 .owl-item {
+    padding: 10px 0 30px 0;
+}
+.carousel-2 .owl-pic  {
+    background: #000;
+    margin: 40px 0;
+    transition: all 0.4s ease;
+    height: 240px;
+    padding: 30px 40px;
+    background-color: #FFFFF0;
+    border-radius: 20px;
+}
+.carousel-2 .owl-item.center .owl-pic {
+    opacity: 1;
+    border: 8px solid transparent;
+    box-shadow: 0px 8px 20px 400px rgba(0, 0, 0, 0.3), 0 16px 20px 20px rgba(0, 0, 0, 0.2);
+    margin: 0 0 0 -15%;
+    width: 130%;
+    height: 320px;
+}
+.carousel-2 .owl-item.center + .owl-item {
+    position: relative;
+    z-index: -1;
+}
+.carousel-2 .owl-pic img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s opacity ease, 0.3s transform ease;
+    opacity: 0.6;
+    object-fit: cover;
+}
+.carousel-2 .owl-item .owl-pic:hover img,
+.carousel-2 .owl-item.center .owl-pic img {
+    opacity: 1;
+}
+
+.owl-pic .img-project {
+    width: 100%;
+    height: 80%!important;
+    background-color: #C5C4AC;
+}
+
+
+.owl-carousel-3 .owl-stage, .owl-carousel-1 .owl-stage{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review-block {
+    padding: 22px 24px;
+    border: 2px solid white;
+    border-radius: 24px;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header img {
+    width: 56px!important;
+}
+
+.header-meta {
+    margin-left: 15px;
+}
+
+.header p {
+    font-family: "InterRegular";
+    font-size: 18px;
+}
+
+.header-meta .date {
+    font-family: "Interlight";
+    color: #717171;
+}
+
+.nf-form-fields-required {
+    font-family: "Interlight";
+    /* font-size: ; */
+    color: white;
+    text-align: center;
+}
+
+.nf-form-content {
+    padding: 30px 0 0 0!important;
+}
+
+#nf-field-5-container label[for='nf-field-5'], #nf-field-6-container label[for='nf-field-6'] {
+    font-family: "Interlight";
+    color: white;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.nf-form-content input:not([type=submit]){
+    background-color: black!important;
+    border: 2px solid white!important;
+    border-radius: 6px!important;
+    color: white!important;
+    font-size: 16px;
+}
+
+.nf-pass.field-wrap .nf-field-element:after {
+    color: white!important;
+}
+
+.nf-error.field-wrap .nf-field-element:after {
+    border-radius: 6px;
+}
+
+#nf-form-2-cont .nf-form-content {
+    width: 560px!important;
+}
+
+#nf-field-7-wrap .nf-field-element {
+    text-align: center;
+}
+
+.nf-response-msg {
+    text-align: center;
+}
+
+.for-address {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-family: "Interlight";
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.for-address:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Footer */
+.site-footer {
+    border: 2px solid #fff;
+    border-radius: 70px 70px 0 0;
+    background-color: black;
+}
+
+.title, .dark-text {
+    color: #3D3D3D;
+}
+
+.title {
+    font-family: "Interlight";
+    font-size: 20px;
+}
+
+footer .nav-link {
+    font-family: "Interlight";
+    color: white!important;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.title-nonclick {
+    font-family: "InterBold";
+}
+
+.btn-up {
+    position: fixed; /* фиксированная позиция */
+    background-color: black; /* цвет заднего фона */
+    border: 2px solid white;
+    left: 46%; /* расстояние от правого края */
+    bottom: 0px; /* расстояние от нижнего края */
+    border-radius: 8px;
+    cursor: pointer; /* форма курсора */
+    display: flex; /* не отображать элемент */
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+    width: 167px;
+    height: 39px;
+    opacity: 0.5;
+    z-index: 999;
+  }
+  
+  .btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+  }
+  
+  .btn-up_hide {
+    display: none;
+  }
+  
+  .btn-up_hiding {
+    opacity: 0;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      opacity: 1; /* цвет заднего фона при наведении */
+    }
+  }
+
+@media (min-width: 200px) and (max-width: 500px) {
+    
+    .m-105 {
+        margin-top: 55px;
+    }
+
+    .navbar {padding: 10px;}
+
+    .navbar>.container-fluid {
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .call-header {
+        width: auto;
+        height: auto;
+        padding: 8px 15px;
+        font-size: 10px;
+    }
+
+    .contacts-header {
+        justify-content: space-between;
+    }
+
+    .banner {
+        height: 580px;
+    }
+
+    .banner h1 {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .slon-back {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+
+    .h2-custom {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .button-classic {
+        padding: 5px;
+        font-size: 11px;
+        border-radius: 10px;
+    }
+
+    #nf-form-2-cont .nf-form-content {
+        width: auto!important;
+    }
+
+    .site-footer {
+        border-radius: 30px 30px 0 0;
+        border: 2px solid #3D3D3D;
+        padding: 1.618em 1em 3.706325903em;
+        
+    }
+
+    .btn-up {
+        left: 27%;
+    }
+    .stroi {
+        text-align: left!important;
+        margin-left: 45px!important;
+    }
+
+}
+
+@media (min-width: 650px) and (max-width: 1200px) {
+    .navbar>.container-fluid {
+        justify-content: center;
+    }
+
+    .call-header {
+        width: auto;
+        height: auto;
+        padding: 8px 15px;
+        font-size: 10px;
+    }
+
+    .contacts-header {
+        flex-direction: column-reverse;
+    }
+
+    .logos-contacts {
+        margin: 0;
+    }
+
+    .icon:first-child {
+        margin-right: 20px;
+    }
+
+    .banner {
+        height: 650px;
+    }
+
+    .banner h1 {
+        font-size: 21px;
+        margin-bottom: 25px;
+    }
+
+    .slon-back {
+        padding: 15px 50px;
+        font-size: 15px;
+    }
+
+    .h2-custom {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .button-classic {
+        padding: 15px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+
+    #nf-form-2-cont .nf-form-content {
+        width: auto!important;
+    }
+
+    .site-footer {
+        border-radius: 30px 30px 0 0;
+        border: 2px solid #3D3D3D;
+        padding: 1.618em 1em 3.706325903em;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1334px) {
+    .navbar .container-fluid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .navbar .contacts-header {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .stroi {
+        margin-left: 25px;
+    }
+}

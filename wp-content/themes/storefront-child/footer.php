@@ -1,0 +1,210 @@
+</div><!-- .col-full -->
+	</div><!-- #content -->
+
+	<?php do_action( 'storefront_before_footer' ); ?>
+
+	<footer id="colophon" class="site-footer container-fluid" role="contentinfo">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-md-2 col-8">
+					<div class="under-logo">
+						<img src="<?= get_stylesheet_directory_uri() . "/assets/img/Logo.svg"?>" alt="Логотип">
+					</div>
+					<div class="contacts-header mt-3">
+						<div class="logos-contacts">
+							<a class="icon" href="https://wa.me/+79833102055/" target="_blank">
+								<svg class="icon-1" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="around" d="M15.3629 0.500044L15.3641 0.500041C17.3156 0.495431 19.2487 0.877215 21.0513 1.62327C22.8539 2.36932 24.4903 3.4648 25.8657 4.84627L25.8677 4.84821C27.2508 6.22215 28.3471 7.85623 29.0931 9.65582C29.8391 11.4554 30.22 13.3848 30.2138 15.3322V15.3336C30.2107 23.5055 23.5464 30.1566 15.3572 30.1566H15.3517C12.6843 30.1551 10.0696 29.4405 7.7899 28.0902L7.78956 28.09L7.22831 27.7581L7.04889 27.6521L6.84724 27.7048L1.87287 29.0066L3.19527 24.1881L3.25359 23.9756L3.1361 23.7892L2.77084 23.2096C1.28323 20.847 0.49598 18.1125 0.500016 15.3223L0.500016 15.3217C0.502931 7.15058 7.16699 0.500043 15.3629 0.500044Z" fill="white" stroke="white"/>
+									<path class="center-icon" fill-rule="evenodd" clip-rule="evenodd" d="M10.7394 7.61344C10.3933 6.84624 10.0292 6.8307 9.7005 6.81742L8.81556 6.80664C8.50769 6.80664 8.00746 6.92193 7.58458 7.38311C7.16169 7.84428 5.96863 8.95887 5.96863 11.2259C5.96863 13.4929 7.623 15.6835 7.85352 15.9913C8.08405 16.2991 11.0473 21.0995 15.7399 22.9465C19.6395 24.4814 20.4331 24.1761 21.2798 24.0994C22.1266 24.0227 24.0113 22.9848 24.3957 21.9088C24.7802 20.8328 24.7804 19.911 24.6652 19.7183C24.5499 19.5255 24.242 19.411 23.78 19.1804C23.3179 18.9498 21.0486 17.8352 20.6254 17.6813C20.2023 17.5274 19.8947 17.451 19.5865 17.9122C19.2784 18.3733 18.3947 19.4107 18.1253 19.7183C17.8558 20.0258 17.5869 20.0644 17.1248 19.8341C16.6628 19.6037 15.1761 19.117 13.4123 17.5472C12.0399 16.3259 11.1135 14.8175 10.8438 14.3566C10.5741 13.8957 10.8152 13.646 11.0467 13.4165C11.2539 13.2099 11.5083 12.8783 11.7396 12.6094C11.9709 12.3405 12.047 12.1482 12.2006 11.8412C12.3543 11.5342 12.2777 11.2645 12.1622 11.0342C12.0467 10.8038 11.1497 8.52476 10.7394 7.61344Z" fill="black"/>
+								</svg>
+							</a>
+							<a class="icon" href="https://t.me/+79833102055" target="_blank">
+								<svg width="34" height="37" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg" >
+									<path class="around" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="white" />
+									<path class="center-icon" fill-rule="evenodd" clip-rule="evenodd" d="M6.78185 14.8376C11.1532 12.9392 14.0633 11.6778 15.5246 11.0658C19.6836 9.32973 20.5579 9.02998 21.1199 9.01749C21.2448 9.01749 21.5196 9.04247 21.7069 9.19234C21.8568 9.31724 21.8943 9.4796 21.9192 9.6045C21.9442 9.72939 21.9692 9.99167 21.9442 10.1915C21.7194 12.5645 20.7452 18.3222 20.2456 20.97C20.0333 22.0941 19.6211 22.4688 19.2215 22.5062C18.3472 22.5812 17.6853 21.9317 16.8485 21.3822C15.5246 20.5204 14.7877 19.9833 13.5012 19.1341C12.015 18.1599 12.9767 17.6228 13.826 16.7485C14.0508 16.5237 17.8851 13.0266 17.96 12.7144C17.9725 12.6769 17.9725 12.5271 17.8851 12.4521C17.7977 12.3772 17.6728 12.4022 17.5729 12.4271C17.4355 12.4521 15.3372 13.851 11.2531 16.6112C10.6536 17.0233 10.1166 17.2231 9.62947 17.2107C9.09242 17.1982 8.06827 16.9109 7.29392 16.6611C6.3572 16.3614 5.60782 16.199 5.67027 15.6744C5.70774 15.3997 6.08243 15.1249 6.78185 14.8376Z" fill="black" />
+								</svg>
+							</a>
+						</div>
+					</div>
+					<p class="dark-text title mt-3" style="color: white!important;">+79833102055 <br> © 2024 Спарта</p>
+				</div>
+				<div class="col-md-3">
+					<p class="dark-text title-nonclick mb-3"></p>
+					<ul class="nav flex-column m-0">
+						<li class="nav-item mb-2">
+							<a href="#about-us" class="nav-link p-0 pb-3">О нас</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a href="#our-services" class="nav-link p-0 pb-3">Услуги</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a href="#our-projects" class="nav-link p-0 pb-3">Проекты</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a href="#reviews" class="nav-link p-0 pb-3">Отзывы</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 mt-3 mt-md-0">
+					<p class="dark-text title-nonclick mb-3">ДОКУМЕНТЫ</p>
+					<ul class="nav flex-column m-0">
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0">Политика конфиденциальности</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer><!-- #colophon -->
+
+	<?php do_action( 'storefront_after_footer' ); ?>
+
+</div><!-- #page -->
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . "/scripts.js"?>"></script>
+<script>
+jQuery.noConflict();
+jQuery(document).ready(function($){
+  $(".owl-carousel").owlCarousel({
+	loop: true,
+	autoplay: true,
+	autoplayTimeout: 5000,
+	nav: true,
+	margin: 10,
+	stagePadding: 50, 
+	items: 2,
+	height: 490,
+	center: true,
+	dots: true,
+	responsiveClass:true,
+	width: 861,
+	responsive: {
+		0: {
+			items: 1,
+			nav: false
+		},
+		600: {
+			items: 1,
+			nav: false
+		},
+		1366: {
+			items: 2
+		}
+	}
+  });
+});
+
+let $owl3 = jQuery('.owl-carousel-3');
+$owl3.owlCarousel({
+	loop:true,
+	autoplay: true,
+	autoplayTimeout: 5000,
+    center: false,
+    nav: true,
+    dots: true,
+	margin:15,
+    responsive:{
+        0:{items:1,
+		nav: false},
+        600:{items:1,
+		nav: false},
+        992:{items:1,
+		nav: false},
+        1200:{items:2,
+			nav: false},
+        1365:{items:3}            
+    }
+});
+
+let $owl = jQuery('.carousel-2');
+    $owl.children().each( function( index ) {
+	jQuery(this).attr( 'data-position', index );
+});
+jQuery(document).on('click', '.owl-item>div', function($) {
+    let $speed = 300;
+    $owl.trigger('to.owl.carousel', [$(this).data( 'position' ), $speed] );
+});    
+$owl.owlCarousel({
+    loop:true,
+    center: true,
+    stagePadding: 200,
+	autoplay: true,
+	autoplayTimeout: 5000,
+    nav: true,
+    dots: true,
+    responsive:{
+        0:{items:1,
+		stagePadding: 50,
+		nav: false
+		},
+        600:{items:1,
+		stagePadding: 100,
+		nav: false},
+        992:{items:1,
+		nav: false},
+        1200:{items:1,
+			nav: false},
+        1365:{items:2}            
+    }
+});
+</script>
+
+<script type="text/javascript">
+	const btnUp = {
+  el: document.querySelector('.btn-up'),
+  scrolling: false,
+  show() {
+    if (this.el.classList.contains('btn-up_hide') && !this.el.classList.contains('btn-up_hiding')) {
+      this.el.classList.remove('btn-up_hide');
+      this.el.classList.add('btn-up_hiding');
+      window.setTimeout(() => {
+        this.el.classList.remove('btn-up_hiding');
+      }, 300);
+    }
+  },
+  hide() {
+    if (!this.el.classList.contains('btn-up_hide') && !this.el.classList.contains('btn-up_hiding')) {
+      this.el.classList.add('btn-up_hiding');
+      window.setTimeout(() => {
+        this.el.classList.add('btn-up_hide');
+        this.el.classList.remove('btn-up_hiding');
+      }, 300);
+    }
+  },
+  addEventListener() {
+    // при прокрутке окна (window)
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+      if (this.scrolling && scrollY > 0) {
+        return;
+      }
+      this.scrolling = false;
+      // если пользователь прокрутил страницу более чем на 200px
+      if (scrollY > 400) {
+        // сделаем кнопку .btn-up видимой
+        this.show();
+      } else {
+        // иначе скроем кнопку .btn-up
+        this.hide();
+      }
+    });
+    // при нажатии на кнопку .btn-up
+    document.querySelector('.btn-up').onclick = () => {
+      this.scrolling = true;
+      this.hide();
+      // переместиться в верхнюю часть страницы
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  }
+}
+
+btnUp.addEventListener();
+</script>
+
+<?php wp_footer(); ?>
+
+</body>
+</html>

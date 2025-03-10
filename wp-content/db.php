@@ -1,0 +1,1 @@
+/var/www/u2652182/data/www/sparta-arch.ru/wp-content/plugins/query-monitor/wp-content/db.php

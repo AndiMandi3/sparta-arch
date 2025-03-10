@@ -1,0 +1,10 @@
+# PHP session
+sessions/
+
+# OpenServer файлы
+OSPanel/
+
+# IDE и системные файлы
+.vscode/
+.idea/
+.DS_Store
